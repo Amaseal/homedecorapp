@@ -4,6 +4,6 @@ export async function load() {
   );
   const home = await res.json();
   return {
-    home,
+    data: home.data,
   };
 }

@@ -4,6 +4,6 @@ export async function load() {
   );
   const categories = await res.json();
   return {
-    categories,
+    data: categories.data,
   };
 }

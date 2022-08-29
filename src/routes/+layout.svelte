@@ -6,7 +6,7 @@
 
   export let data;
 
-  $categories = data.categoryData.data;
+  $categories = data.data;
 </script>
 
 <Header />

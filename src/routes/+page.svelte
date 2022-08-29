@@ -7,7 +7,8 @@
 
   export let data;
 
-  $home = data.homeData.data;
+  $home = data.data;
+  $: console.log($home);
 </script>
 
 <svelte:head>
