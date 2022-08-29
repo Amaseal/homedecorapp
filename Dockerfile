@@ -12,6 +12,6 @@ WORKDIR /app
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/node_modules ./node_modules
 COPY package.json .
-ENV PORT 4000
+ENV PORT 3333
 EXPOSE ${PORT}
 CMD ["node", "build"]
