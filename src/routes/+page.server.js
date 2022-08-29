@@ -1,14 +1,9 @@
 export async function load() {
-  const home = await fetch(
-    "https://cms.sghomedecor.lv/api/home?populate=background,quotes,about,about.image",
-    {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
+  const res = await fetch(
+    "https://cms.sghomedecor.lv/api/home?populate=background,quotes,about,about.image"
   );
-  const homeData = await home.json();
+  const home = await res.json();
   return {
-    homeData,
+    home,
   };
 }
