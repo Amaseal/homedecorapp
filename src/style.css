@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@900&display=swap');
+
+:root{
+--primary:#2F434B;
+--secondary: #EDEEF2;
+--background: #FAFBFD;
+
+}
+
+body{
+    background-color: var(--background);
+}
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3,h4{
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--primary)
+}
+h1{
+    font-size: clamp(24px, 5.2vw, 96px);
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+}
+button{
+    display: grid;
+
+    place-items: center;
+}
+.hamburger{
+    padding: 1px 6px;
+}
+.hamburger-box{
+    display: block !important;
+}
+
+.button {
+    background-color: white;
+    font-size: 24px;
+
+}
+.inner-button{
+    transition: all 0.2s ease;
+    padding: 10px 20px;
+
+}
+.button:hover > .inner-button{
+    letter-spacing: 4px;
+}
+span {
+    display: block;
+}
